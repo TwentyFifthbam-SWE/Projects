@@ -25,10 +25,8 @@ To track my progress and keep myself accountable, I will maintain a list of comp
 ---
 
 ### Completed Projects
+1. [Palindrome Checker] - to be able to check wether a word is the same  spell backwards as it is forwards  - Status: (work in progress)
 
-1. [Project Name] - Description - Status: ❌
-2. [Project Name] - Description - Status: ❌
-3. [Project Name] - Description - Status: ❌
    ...
    
 ---
