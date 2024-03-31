@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "Password Generator.h"
+
 
 
 
@@ -11,7 +11,9 @@ char Num[] =  "1234567890";
 
 
 
-char Combine_All_characters() {
+
+	char Combine_All_characters() {
+	
 	const int  totallength = sizeof(LA) + sizeof(UA) + sizeof(Num);
 	char characters[totallength];
 	int index = 0;
