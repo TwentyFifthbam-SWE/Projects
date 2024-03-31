@@ -25,7 +25,6 @@ void Errorchecker() {
 	}
 	else
 	{
-		printf("password change was successful please save it somewhere safe for future use");
 		exit;
 	}
 }
