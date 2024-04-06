@@ -1,88 +1,87 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
-#include <errno.h>
 #include <stdbool.h>
-#define Max_length 100
+
+#define MAX_LENGTH 50
 #define MAX_ENTRIES 100
 
-
-
-struct lowest_Fare {
-	char Source[50];
-	char destination[50];
-	int fare;
-	char airline[50];
-};
-struct flightentry{
-	char Source[50];
-	char destination[50];
-	int fare;
-	char airline[50];
-};
-struct Flight_Info {
-	int Fl_Info_Array[Max_length];
-	
+struct FlightEntry {
+    char source[50];
+    char destination[50];
+    int fare;
+    char airline[50]; // Include airline information in FlightEntry
 };
 
+struct LowestFare {
+    char source[50];
+    char destination[50];
+    int fare;
+    char airline[50];
+};
 
-void displayleastfare() {
-	char flights[100];
-	int lowest_Fares[100];
-	
-	struct flightentry flights[MAX_ENTRIES];
-	struct lowestFare lowest_Fares[MAX_ENTRIES];
-	{
-
-	};
-
-
+void parseLine(char* line, struct FlightEntry* entry) {
+    sscanf(line, "%[^-] - %[^,], $%d, %[^\n]", entry->source, entry->destination, &entry->fare, entry->airline);
 }
 
+void processFlight(char* filename, struct FlightEntry* entries, int* totalEntries) {
+    FILE* flightfile = fopen("C:\\Users\Redme\source\repos\Projects\majo4\majo4\aircanada.txt", "r");
+    if (flightfile == NULL) {
+        printf("Error opening file: %s\n", filename);
+        return;
+    }
 
+    char buffer[255];
+    while (fgets(buffer, sizeof(buffer), flightfile) != NULL && *totalEntries < MAX_ENTRIES) {
+        parseLine(buffer, &entries[*totalEntries]);
+        (*totalEntries)++;
+    }
 
-void processFlight(ftp) {
-	struct Flight_Info flightinfo;
-	FILE *ftptr;
-	char buffer[255];
-	
-
-
-	ftptr = fopen("C:\\Users\\Redme\\OneDrive\\Documents\\flights.txt","r");
-	
-	if (ftptr == NULL) {
-		printf("Error Opening file");
-		return;
-		}
-
-	fgets(buffer, sizeof(buffer), ftptr);
-	for(int i = 0; i < Max_length; i++){
-		flightinfo.Fl_Info_Array[i] = i * 2;
-	}
-
-	fclose(ftptr);
+    fclose(flightfile);
 }
 
+void displayLeastFareDetails(struct FlightEntry* entries, int totalEntries) {
+    struct LowestFare lowestFare;
+    lowestFare.fare = 999999; // Initialize to a high value
 
+    for (int i = 0; i < totalEntries; i++) {
+        if (entries[i].fare < lowestFare.fare) {
+            strcpy(lowestFare.source, entries[i].source);
+            strcpy(lowestFare.destination, entries[i].destination);
+            lowestFare.fare = entries[i].fare;
+            strcpy(lowestFare.airline, entries[i].airline);
+        }
+    }
+
+    printf("%s: %s to %s, Fare $%d\n", lowestFare.airline, lowestFare.source,
+        lowestFare.destination, lowestFare.fare);
+}
 
 int main() {
-	FILE* ftptr = fopen("C:\\Users\\Redme\\OneDrive\\Documents\\flights.txt","r");
-	char buffer[255];
-	
-	
+    // Open flights.txt to read filenames
+    FILE* flightFile = fopen("C:\\Users\\Redme\\source\\repos\\Projects\\majo4\\majo4\\flights.txt", "r");
+    if (flightFile == NULL) {
+        printf("Error opening file: flights.txt\n");
+        return 1;
+    }
 
-	errno_t err = fopen_s(&ftptr, "C:\\Users\\Redme\\OneDrive\\Documents\\flights.txt", "r");
-	
-	if (ftptr == NULL) {
-		printf("Error file does not exist please try  again!");
+    char filename[MAX_LENGTH];
+    int totalEntries = 0;
+    struct FlightEntry entries[MAX_ENTRIES];
 
-		return 1;
-	}
-   
-	
+    // Read filenames from flights.txt and process each flight data file
+    while (fgets(filename, sizeof(filename), flightFile) != NULL && totalEntries < MAX_ENTRIES) {
+        filename[strcspn(filename, "\n")] = 0; // Remove newline character if present
+        processFlight(filename, entries, &totalEntries);
+    }
 
-   
+    // Close flights.txt
+    fclose(flightFile);
 
+    // Display least fare details
+    displayLeastFareDetails(entries, totalEntries);
 
-
+    return 0;
 }
+
