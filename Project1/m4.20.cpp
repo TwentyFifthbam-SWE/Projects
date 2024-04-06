@@ -6,19 +6,19 @@
 #define MAX_AIRLINES 10
 #define MAX_CITY_LENGTH 50
 
-const char* source = "C:\\Users\Josh\Downloads\teams.txt";
-const char* source2 = "C:\\Users\Josh\Downloads\Westjet.txt";
-const char* source3 = "C:\\Users\Josh\Downloads\Air Canada.txt";
+const char* source = "\\Downloads\\teams.txt";
+const char* source2 = "\\Downloads\\Westjet.txt";
+const char* source3 = "\\Downloads\\Air Canada.txt";
 const char* mode = "r";
 
 struct FlightEntry {
-    char airline[MAX_AIRLINES];
+    char airline[MAX_CITY_LENGTH];
     char source[MAX_CITY_LENGTH];
     char Destination[MAX_CITY_LENGTH];
     int Fare;
 };
 struct LowestFare {
-        char airline[MAX_AIRLINES];
+        char airline[MAX_CITY_LENGTH];
         char source[MAX_CITY_LENGTH];
         char Destination[MAX_CITY_LENGTH];
         int Fare;
@@ -33,8 +33,8 @@ struct Flightpair {
 
 
 void displayLeastFareDetails(struct FlightEntry flights[], int numflights) {
-    FILE* WESTJET;
-    FILE* Aircanada;
+    
+    
     struct FlightEntry leastfare[MAX_AIRLINES];
     
     
@@ -47,7 +47,7 @@ void displayLeastFareDetails(struct FlightEntry flights[], int numflights) {
         int j = 0;
         while(j < MAX_FLIGHTS){
             if (strcmp(leastfare[j].source, currentFlight.source) == 0 &&
-                strcmp(leastfare[i].Destination, currentFlight.source) == 0)
+                strcmp(leastfare[i].Destination, currentFlight.Destination) == 0)
             {
                  if (currentFlight.Fare < leastfare[j].Fare) {
                     leastfare[j] = currentFlight;
@@ -69,28 +69,14 @@ void displayLeastFareDetails(struct FlightEntry flights[], int numflights) {
     
 
 
-    if (fopen_s(&WESTJET, source2, mode)) {
-        printf("failed to open file.\n");
-}
-    else
-    {
-        printf("file  opened succesfully.\n");
-    }
- 
-    if (fopen_s(&Aircanada, source3, mode) != 0) {
-        printf("failed to open file.\n");
 
-    }
-    else {
-        printf("file opened succesfully.\n");
-    }
-    
 
-}
+
 
 
 int parseline(char* source,char* destination,int* fare,char* read) {
-    if (sscanf_s(read, "%[^,],%[^,],%d", source, destination, fare) == 3) {
+    if (sscanf_s(read, "%[^,],%[^,],%d", source, (unsigned)sizeof(source),destination, (unsigned)sizeof(destination),
+        fare) == 3) {
         return 1;// parsing passed
 
     }
@@ -100,24 +86,34 @@ int parseline(char* source,char* destination,int* fare,char* read) {
     }
 }
 
-void processFlight(const char* filename,struct FlightEntry flights[], int* totalCount) {
+int processFlight(const char* filename,struct FlightEntry flights[], int* totalCount) {
   
     FILE* source;
 
     errno_t err = fopen_s(&source, filename, "r");
     if (err != 0 || source == NULL) {
         printf("error opening file %s.\n", filename);
-        return;
+        return 0;
     }
     char line[100];
-    while (fgets(line,sizeof(line),source) != NULL && *totalCount <MAX_FLIGHTS)
-    {
-        sscanf(line, "%[^,],%[^,],%[^,],%d", flights[*totalCount].airline,
-            flights[*totalCount].source, flights[*totalCount].Destination,
-            &flights[*totalCount].Fare);
+    while (fgets(line, sizeof(line), source) != NULL && *totalCount < MAX_FLIGHTS) {
+        if (sscanf_s(line, "%[^,],%[^,],%[^,],%d", flights[*totalCount].airline,
+            (unsigned)sizeof(flights[*totalCount].airline),
+            flights[*totalCount].source,
+            (unsigned)sizeof(flights[*totalCount].source),
+            flights[*totalCount].Destination,
+            (unsigned)sizeof(flights[*totalCount].Destination),
+            &flights[*totalCount].Fare) != 4) {
+            printf("error parsing line from file %s.\n", filename);
+            fclose(source);
+            return 0; // Return 0 to indicate failure
+        }
         (*totalCount)++;
     }
+
     fclose(source);
+    return 1; // Return 1 to indicate success
+
 }
 
 
@@ -129,6 +125,6 @@ int main() {
     int totalCount = 0;
    
     processFlight("Air Canada.txt", flights, &totalCount);
-    processFlight("Westjest.txt", flights, &totalCount);
+    processFlight("Westjet.txt", flights, &totalCount);
 
 }
