@@ -2,31 +2,46 @@
 #include <string.h>
 #include <ctype.h>
 #include <errno.h>
-
+#include <stdbool.h>
 #define Max_length 100
+#define MAX_ENTRIES 100
 
 
 
-
-
-
-
-
-
-
-
-
-
+struct lowest_Fare {
+	char Source[50];
+	char destination[50];
+	int fare;
+	char airline[50];
+};
+struct flightentry{
+	char Source[50];
+	char destination[50];
+	int fare;
+	char airline[50];
+};
 struct Flight_Info {
 	int Fl_Info_Array[Max_length];
 	
 };
 
 
+void displayleastfare() {
+	char flights[100];
+	int lowest_Fares[100];
+	
+	struct flightentry flights[MAX_ENTRIES];
+	struct lowestFare lowest_Fares[MAX_ENTRIES];
+	{
+
+	};
+
+
+}
 
 
 
-void processFlight() {
+void processFlight(ftp) {
 	struct Flight_Info flightinfo;
 	FILE *ftptr;
 	char buffer[255];
