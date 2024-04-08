@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Portfoliolandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|solutionrelative:Portfoliolandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|solutionrelative:blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\AboutMe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|solutionrelative:AboutMe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|solutionrelative:projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Contact info.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA2A8818-1550-4013-87D9-B6D7C14FF704}|portfolio.vcxproj|solutionrelative:Contact info.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "blog.html",
+              "DocumentMoniker": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\blog.html",
+              "RelativeDocumentMoniker": "blog.html",
+              "ToolTip": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\blog.html",
+              "RelativeToolTip": "blog.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-08T17:37:27.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact info.html",
+              "DocumentMoniker": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Contact info.html",
+              "RelativeDocumentMoniker": "Contact info.html",
+              "ToolTip": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Contact info.html",
+              "RelativeToolTip": "Contact info.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-08T17:35:42.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "projects.html",
+              "DocumentMoniker": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\projects.html",
+              "RelativeDocumentMoniker": "projects.html",
+              "ToolTip": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\projects.html",
+              "RelativeToolTip": "projects.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-08T17:34:41.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AboutMe.html",
+              "DocumentMoniker": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\AboutMe.html",
+              "RelativeDocumentMoniker": "AboutMe.html",
+              "ToolTip": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\AboutMe.html",
+              "RelativeToolTip": "AboutMe.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-08T17:24:55.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Portfoliolandingpage.html",
+              "DocumentMoniker": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Portfoliolandingpage.html",
+              "RelativeDocumentMoniker": "Portfoliolandingpage.html",
+              "ToolTip": "C:\\Users\\Redme\\source\\repos\\Projects\\portfolio\\Portfoliolandingpage.html",
+              "RelativeToolTip": "Portfoliolandingpage.html",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAD4AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-08T16:46:37.312Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
