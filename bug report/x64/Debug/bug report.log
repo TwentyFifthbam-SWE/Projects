@@ -1,0 +1,16 @@
+﻿  FileName.html
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(1,1): error C2059: syntax error: '<'
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(8,19): error C2143: syntax error: missing ';' before '{'
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(8,19): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(12,1): error C2059: syntax error: '.'
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(12,7): error C2143: syntax error: missing ';' before '{'
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(12,7): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(16,23): error C2014: preprocessor command must start as first nonwhite space
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(18,1): error C2059: syntax error: '<'
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(22,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(23,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(24,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(25,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(26,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(27,12): error C2332: 'class': missing tag name
+C:\Users\Josh\Documents\GitHub\Projects\bug report\FileName.html(28,12): error C2332: 'class': missing tag name

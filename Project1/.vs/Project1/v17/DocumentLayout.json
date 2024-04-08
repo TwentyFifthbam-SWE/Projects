@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Josh\\Documents\\GitHub\\Projects\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A1BF29-2E42-483C-A9AA-C14955C8C6C6}|Project1.vcxproj|C:\\Users\\Josh\\Documents\\GitHub\\Projects\\Project1\\m4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5A1BF29-2E42-483C-A9AA-C14955C8C6C6}|Project1.vcxproj|solutionrelative:m4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A1BF29-2E42-483C-A9AA-C14955C8C6C6}|Project1.vcxproj|C:\\Users\\Josh\\Downloads\\Westjet.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A1BF29-2E42-483C-A9AA-C14955C8C6C6}|Project1.vcxproj|C:\\Users\\Josh\\Downloads\\Air Canada.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Air Canada.txt",
+              "DocumentMoniker": "C:\\Users\\Josh\\Downloads\\Air Canada.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Air Canada.txt",
+              "ToolTip": "C:\\Users\\Josh\\Downloads\\Air Canada.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\Air Canada.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-06T13:14:12.068Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "m4.cpp",
+              "DocumentMoniker": "C:\\Users\\Josh\\Documents\\GitHub\\Projects\\Project1\\m4.cpp",
+              "RelativeDocumentMoniker": "m4.cpp",
+              "ToolTip": "C:\\Users\\Josh\\Documents\\GitHub\\Projects\\Project1\\m4.cpp",
+              "RelativeToolTip": "m4.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-06T13:05:37.905Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Westjet.txt",
+              "DocumentMoniker": "C:\\Users\\Josh\\Downloads\\Westjet.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Westjet.txt",
+              "ToolTip": "C:\\Users\\Josh\\Downloads\\Westjet.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\Westjet.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-06T13:14:13.46Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿  contactusbug.cpp
+C:\Users\Josh\Documents\GitHub\Projects\Contact us page\contactusbug.cpp(16,13): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'size_t'
+  C:\Users\Josh\Documents\GitHub\Projects\Contact us page\contactusbug.cpp(16,13):
+  this argument is used by a conversion specifier
+  
+C:\Users\Josh\Documents\GitHub\Projects\Contact us page\contactusbug.cpp(16,13): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'char *'
+  C:\Users\Josh\Documents\GitHub\Projects\Contact us page\contactusbug.cpp(16,13):
+  this argument is used as a buffer size
+  
+  Contact us page.vcxproj -> C:\Users\Josh\Documents\GitHub\Projects\Contact us page\x64\Debug\Contact us page.exe
