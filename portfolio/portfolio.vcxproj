@@ -130,6 +130,7 @@
     <None Include="AboutMe.html" />
     <None Include="blog.html" />
     <None Include="Contact info.html" />
+    <None Include="styles.css" />
     <None Include="Portfoliolandingpage.html" />
     <None Include="projects.html" />
   </ItemGroup>

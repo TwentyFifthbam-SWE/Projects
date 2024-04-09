@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    background-image: url("C:\\Users\\Josh\\Downloads\\4555.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Rest of your CSS styles */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: background-color #000000 0.3s ease;
+}
+
+    /* Styling for specific boxes */
+    .box:nth-of-type(1) {
+        width: 200px;
+        border-radius: 2px;
+        background-color: silver; /* Red background for Box 1 */
+    }
+
+/*drop down menu for about me page*/
+ody, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+    nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+
+        nav ul li {
+            float: left;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 20px;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            nav ul li:hover {
+                background-color: #555;
+            }
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+}
+
+    .dropdown-content li {
+        display: block;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
