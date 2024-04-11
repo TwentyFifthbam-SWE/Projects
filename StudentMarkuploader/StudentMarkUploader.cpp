@@ -1,10 +1,25 @@
+/*
+FIle: StudentmarkUploader.cpp
+Project or Assignment:  Personal Project
+Programmer: Joshua Harvey 
+
+
+Description: The funtions in this file allow the user to enter their class followed by entering students info
+Name,Student number,Marks then it will be sorted and the student with the best mark will be displayed at the end witha congrats message.
+*/
+
+
+
+
+
+
 #include <stdio.h>
 #include <string.h>
 
 
 
 
-struct Student {
+struct Student { // Struc for Student information for user to enter 
 	int id;
 	char name[50]; // Limit name length to prevent buffer overflow
 	float marks[5]; // Assuming 5 subjects (adjust as needed)
@@ -15,7 +30,7 @@ struct Student {
 
 
 
-
+// Get input function gets user input for name Id mark NOTE: Assuming their are at least 5 subjects so 5 marks will be entered.
 void Get_input(struct Student student[], int *numstudents) {
 
 	printf("enter the number of students(max 10 students): ");
@@ -50,7 +65,7 @@ void Get_input(struct Student student[], int *numstudents) {
 	}
 }
 
-
+// Highestclassmark function stores all students marks and finds the highest mark displays the student info with the highest mark and congratulates them.
 void HighestClassMark(struct Student student[], int numstudents) {
 
 	float highest_mark = -1.0;
@@ -82,11 +97,11 @@ void HighestClassMark(struct Student student[], int numstudents) {
 
 
 int main() {
-	struct Student student[10];
-	int numstudents = 0;
+	struct Student student[10]; // size of class is 10 
+	int numstudents = 0; // set number of students to 0 as user enters class size
 
-	Get_input(student,&numstudents);
-	HighestClassMark(student,numstudents);
+	Get_input(student,&numstudents); // function call getinput
+	HighestClassMark(student,numstudents);// function call highestclassmark
 	
 	
 	
