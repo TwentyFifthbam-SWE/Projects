@@ -26,15 +26,15 @@ void Get_input(struct Student student[], int *numstudents) {
 	}
 
 	for (int i = 0; i < *numstudents; i++) {
-		printf("please enter student ID", i + 1);
+		printf("please enter student ID\n", i + 1);
 		scanf_s("%d", &student[i].id);
 		
-		printf("please enter student %d name", i + 1);
+		printf("please enter student %d name\n", i + 1);
 		fgets(student[i].name, 50, stdin);
 		student[i].name[strcspn(student[i].name, "\n")] = '\0';
 		
 		
-		printf("please enter Marks(space-seperated): ");
+		printf("please enter Marks(space-seperated)\n ");
 		for (int j = 0; j < 5; j++) {
 			scanf_s("%f", &student[i].marks[j]);
 		}
